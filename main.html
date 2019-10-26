@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game</title>
+    <style>
+    #over{
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    #high{
+        position: absolute;
+        top: 32%;
+        left: 20%;
+    }
+    #start{
+        position: absolute;
+        right: 10%;
+        top: 10%;
+    }
+    </style>
+</head>
+<body>
+    <div  id="over">
+    <h1 style="text-align: center; color:red;background:black;">GAME OVER</h1>
+        <h3 id="high"></h3>
+    <h4>PRESS ENTER TO RESTART</h4>
+    </div>
+    <img src="basketball.png"style="display:none;" id="ball">
+    <canvas id="gameScreen" height="400px" width="800px" style="border:2px solid black;"></canvas>
+    <div id="start">
+     
+            <h4>Rules:</h4>
+            <h5>USE "<" and ">" keys to move the paddle</h5>
+            <h2 id="score"></h2>
+        <h2 id="score2" style="background:black;color:red; width: 200px;"></h2>
+        </div>
+    <script src="main2.js"></script>
+</body>
+</html>
